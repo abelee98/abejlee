@@ -144,14 +144,14 @@ nav a {
     font-size: .8rem;
     padding: .5em 1.15em;
     color: #0b3954;
+    background-color: #f4f4f9;
     letter-spacing: 3px;
     border-width: 2px;
     border-style: solid;
 
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover {
     background-color: #0b3954;
     color: #f4f4f9;
 }
