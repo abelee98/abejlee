@@ -62,8 +62,9 @@ hr {
 }
 .row {
     width: auto;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 2em;
+    font-size: 1em;
 }
 .row h1::before {
     content: " ";
@@ -74,6 +75,9 @@ hr {
 
 }
 @media(min-width: 37.5rem) {
+    .row {
+        font-size: 1.5em;
+    }
     .row h1::before {
         content: " ";
         right: 100%;
