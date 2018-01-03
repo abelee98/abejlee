@@ -10,7 +10,7 @@ Imports
 /* 
 =========
 Color Scheme: 000000-2f4550-586f7c-b8dbd9-f4f4f9
-0b3954-087e8b-ff5a5f-b8dbd9-f4f4f9
+414a51-78716e-79858e-979d9d-b1b9bb: darker earthy tones
 =========
 */
 
@@ -58,6 +58,7 @@ h1 {
 
 hr {
     width: 60%;
+    color: #414a51;
 }
 .row {
     width: auto;
@@ -66,23 +67,11 @@ hr {
 }
 .row h1::before {
     content: " ";
-    right: 100%;
-    background: #000000;
-    width: 50px;
-    height: 2px;
-    display: hide;
-    margin: 10px 10px;
-    top: 50%;
+
 }
 .row h1::after {
     display: hide;
-    content: " ";
-    left: 100%;
-    background: #000000;
-    width: 50px;
-    height: 2px;
-    margin: 10px 10px;
-    top: 50%;
+
 }
 @media(min-width: 37.5rem) {
     .row h1::before {
@@ -118,46 +107,6 @@ a {
 
 /*
 =========
-Header
-=========
-*/
-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 1em;
-}
-
-nav a {
-    font-weight: 900;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .8rem;
-    padding: .5em 1.15em;
-    color: #0b3954;
-    background-color: #f4f4f9;
-    letter-spacing: 3px;
-    border-width: 2px;
-    border-style: solid;
-
-}
-
-nav a:hover {
-    background-color: #0b3954;
-    color: #f4f4f9;
-}
-
-/*
-=========
 Home
 Photo by Team UI8 on Unsplash
 =========
@@ -173,48 +122,61 @@ Photo by Team UI8 on Unsplash
 }
 
 .me {
-    margin-top: 4rem;
-    width: 150px;
-    height: 150px;
+    margin: 3rem 0;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .home_text {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #0b3954;
-    padding-top: 6rem;
+    letter-spacing: 3px;
+    color: #000000;
+    padding-top: 3rem;
     padding-bottom: 0.5rem;
-    border-color: #0b3954;
+    font-size: 1.3em;
 }
-.home_text h1::before {
-    content: " ";
-    right: 100%;
-    background: #0b3954;
-    width: 50px;
-    height: 2px;
-    display: inline-block;
-    margin: 20px 10px;
-    top: 50%;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.home_text h1::after {
-    display: inline-block;
-    content: " ";
-    left: 100%;
-    background: #0b3954;
-    width: 50px;
-    height: 2px;
-    margin: 20px 10px;
-    top: 50%;
+
+nav li {
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+    align-content: center;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    padding: .5em 1em;
+    color: #414a51;
+    letter-spacing: 2px;
+
+}
+nav a:hover {
+    color: #087e8b;
 }
 @media (min-width: 37.5rem) {
     .me {
-        width: 300px;
-        height: 300px;
+        margin-top: 4rem;
+        width: 250px;
+        height: 250px;
         margin-bottom: 2em;
     }
     .home_text {
         font-size: 2.5em;
+        padding-top: 6rem;
+    }
+    nav a {
+        font-size: .8rem;
+        padding: .5em 1.15em;
+        letter-spacing: 3px;
     }
 }
 
@@ -240,9 +202,12 @@ Education
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 300px);
+    grid-template-rows: repeat(1, 1fr);
 }
-.seesaw {border-radius: 15%;}
+.seesaw {
+    border-radius: 15%;
+    height: 200px;
+}
 
 .button {
     text-decoration: none;
