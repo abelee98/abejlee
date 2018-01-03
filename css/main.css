@@ -4,7 +4,7 @@ Imports
 ============
 */
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Cabin:100,300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,300,400,700,900');
 
 /* 
@@ -22,7 +22,7 @@ Color Scheme: 000000-2f4550-586f7c-b8dbd9-f4f4f9
 
 body {
     margin: 0;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-align: center;
 }
 
@@ -53,6 +53,7 @@ Typography
 */
 h1 {
     margin: 0;
+    font-size: 1.7em;
 }
 
 hr {
@@ -122,7 +123,6 @@ Header
 */
 header {
     position: absolute;
-    margin-top: 1em;
     left: 0;
     right: 0;
 }
@@ -130,59 +130,30 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
- }
- 
- nav li {
-     display: inline-block;
-     margin: 1em;
- }
- 
- nav a {
-     font-weight: 900;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-size: .6em;
-     padding: 1.3em;
-     color: #f4f4f9;
-     letter-spacing: 1px;
- }
- 
- nav a:hover,
- nav a:focus {
-     color: #f4f4f9de;
- }
-@media(min-width: 37.5rem) {
-    header {
-        position: absolute;
-        margin-top: 1em;
-        left: 0;
-        right: 0;
-    }
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        float: right;
-     }
-     
-     nav li {
-         display: inline-block;
-         margin: 1em;
-     }
-     
-     nav a {
-         font-weight: 900;
-         text-decoration: none;
-         text-transform: uppercase;
-         font-size: .8rem;
-         padding: .5em;
-         color: #f4f4f9;
-     }
-     
-     nav a:hover,
-     nav a:focus {
-         color: #f4f4f9de;
-     }
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em 1.15em;
+    color: #0b3954;
+    letter-spacing: 3px;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #0b3954;
+    color: #f4f4f9;
 }
 
 /*
@@ -192,16 +163,17 @@ Photo by Team UI8 on Unsplash
 =========
 */
 .home {
-    background-image: url('../images/pro.jpg');
+    /* background-image: url('../images/pro.jpg'); */
+    background-color: #f4f4f9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
+    display: block;
 }
 
 .me {
-    margin-top: 5em;
+    margin-top: 4rem;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -209,19 +181,16 @@ Photo by Team UI8 on Unsplash
 
 .home_text {
     text-transform: uppercase;
-    font-size: 2em;
-    color: #f4f4f9;
-    padding-top: 0.5em;
-}
-.home_text h4 {
-    margin: 0;
-    font-weight: 200;
-    font-size: 0.7em;
+    letter-spacing: 2px;
+    color: #0b3954;
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    border-color: #0b3954;
 }
 .home_text h1::before {
     content: " ";
     right: 100%;
-    background: #f4f4f9;
+    background: #0b3954;
     width: 50px;
     height: 2px;
     display: inline-block;
@@ -232,23 +201,17 @@ Photo by Team UI8 on Unsplash
     display: inline-block;
     content: " ";
     left: 100%;
-    background: #f4f4f9;
+    background: #0b3954;
     width: 50px;
     height: 2px;
     margin: 20px 10px;
     top: 50%;
 }
-.home_text span {
-    font-weight: 300;
-    font-size: 0.5em;
-    display: block;
-    padding-bottom: 0.6em;
-}
-
 @media (min-width: 37.5rem) {
     .me {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 2em;
     }
     .home_text {
         font-size: 2.5em;
