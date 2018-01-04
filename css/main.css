@@ -13,9 +13,6 @@ Color Scheme: 000000-2f4550-586f7c-b8dbd9-f4f4f9
 414a51-78716e-79858e-979d9d-b1b9bb: darker earthy tones
 =========
 */
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -45,6 +42,20 @@ img {
     margin: 2em 0;
     color: #000000;
 }
+.button {
+    text-decoration: none;
+    font-size: 0.8em;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.15em;
+    color: #087e8b;
+}
+.button:hover,
+.button:focus {
+    background: #087e8b;
+    border-color: #087e8b;
+    color: #f4f4f9;
+}
 
 /*
 =========
@@ -72,7 +83,6 @@ hr {
 }
 .row h1::after {
     display: hide;
-
 }
 @media(min-width: 37.5rem) {
     .row {
@@ -106,13 +116,15 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #0b3954;
+    color: #087e8b;
 }
-
+span {
+    display: block;
+    padding: 0.7em 0;
+}
 /*
 =========
 Home
-Photo by Team UI8 on Unsplash
 =========
 */
 .home {
@@ -181,81 +193,6 @@ nav a:hover {
         font-size: .8rem;
         padding: .5em 1.15em;
         letter-spacing: 3px;
-    }
-}
-
-/*
-=========
-Education
-=========
-*/
-.blog {
-    width: 70%;
-    margin: 0 auto;  
-    padding: 2rem 0;  
-}
-
-.blog h2 {
-    color: #0b3954;
-    text-decoration: none;
-}
-.blog i {
-    color: #087e8b;
-} 
-.blog_grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
-.seesaw {
-    border-radius: 15%;
-    height: 200px;
-}
-
-.button {
-    text-decoration: none;
-    font-size: 0.8em;
-    border-width: 2px;
-    border-style: solid;
-    padding: 0.5em 1.15em;
-    color: #087e8b;
-}
-.button:hover,
-.button:focus {
-    background: #087e8b;
-    border-color: #087e8b;
-    color: #f4f4f9;
-}
-
-@media (min-width: 37.5rem) {
-    .blog_grid {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(16, 1fr);
-        grid-template-rows: repeat(1, 1fr);    
-    }
-    .box.cover-img.info {
-        display: block;
-        grid-column: span 11;
-        grid-row: 1;
-    }
-    .box.box.cover-img.info p {
-        margin-bottom: 2em;
-    }
-    .box.cover-img {
-        grid-column: span 5;
-        grid-row: 1;
-    }
-    
-    .info {
-        margin-left: 1em;
-        text-align: left;
-    }
-    .seesaw {
-        border-radius: 15%;
-        height: 300px;
-        margin-bottom: 2em;
     }
 }
 
@@ -383,11 +320,76 @@ Projects
         margin-bottom: 1em;   
     }
 }
+
+/*
+=========
+Blog
+=========
+*/
+.blog {
+    width: 70%;
+    margin: 0 auto;  
+    padding: 2rem 0;  
+}
+
+.blog h2 {
+    color: #0b3954;
+    text-decoration: none;
+}
+.blog i {
+    color: #087e8b;
+} 
+.blog_grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.seesaw {
+    border-radius: 15%;
+    height: 200px;
+}
+
+@media (min-width: 37.5rem) {
+    .blog_grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(1, 1fr);    
+    }
+    .box.cover-img.info {
+        display: block;
+        grid-column: span 11;
+        grid-row: 1;
+    }
+    .box.box.cover-img.info p {
+        margin-bottom: 2em;
+    }
+    .box.cover-img {
+        grid-column: span 5;
+        grid-row: 1;
+    }
+    
+    .info {
+        margin-left: 1em;
+        text-align: left;
+    }
+    .seesaw {
+        border-radius: 15%;
+        height: 300px;
+        margin-bottom: 2em;
+    }
+}
+
 /*
 =========
 Contact
 =========
 */
+footer {
+    background-color: #f4f4f9;
+    padding: 2rem 0;
+}
 .list {
     width: 100%;
 }
@@ -400,7 +402,7 @@ Contact
 .sig {
     width: 40px;
     height: 25px;
-    margin: 1em;
+    margin: 2em;
 }
 ul {
     margin: 0;
