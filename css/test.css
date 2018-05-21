@@ -38,8 +38,7 @@ body {
 header {
     background: #3A506B;
     color: #f1faee;
-    text-transform: uppercase;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -62,6 +61,8 @@ nav ul {
 }
 
 nav li {
+    text-transform: uppercase;
+    
     display: inline-block;
     margin-left: 50px;
     padding-top: 20px;
@@ -91,12 +92,34 @@ nav ul > li > a:hover::after {
 /*
    Main 
 */
+.main {
+    margin: 0;
+    padding: 0;
+}
 .background-img {
     background-image: url('/images/comp-glasses.jpg');
-    height: 100vh;
+    height: 105vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     filter: blur(4px);
     -webkit-filter: blur(4px);
+}
+.me {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    color: #0B132B;
+    left: -30px;
+}
+.me span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.prof-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
 }
