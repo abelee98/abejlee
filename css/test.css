@@ -1,0 +1,102 @@
+/*
+============
+Imports
+============
+*/
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Cabin:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,300,400,700,900');
+
+/* 
+=========
+Color Scheme: e63946-f1faee-a8dadc-457b9d-1d3557
+=========
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*
+   Navbar CSS
+*/
+.container h3 {
+    margin: 0;
+    padding:20px 0;
+    float: left;
+}
+
+header {
+    background: #3A506B;
+    color: #f1faee;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f1faee;
+}
+
+nav ul > li > a::after {
+    content: '';
+    display: block;
+    height: 5px; 
+    width: 0%;
+    position: absolute;
+    background-color: #f1faee;
+    transition: all ease-in-out 250ms;
+}
+
+nav ul > li > a:hover::after {
+    width: 100%;
+}
+
+/*
+   Main 
+*/
+.background-img {
+    background-image: url('/images/comp-glasses.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
