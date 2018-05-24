@@ -7,9 +7,70 @@ Imports
 @import url('https://fonts.googleapis.com/css?family=Cabin:100,300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,300,400,700,900');
 
+/*
+  Colors: e7e0dc-575557-6d4935-3f302d-1f1f1f
+*/
+
+.row-pad {
+    padding: 40px;
+}
+.upper {
+    text-transform: uppercase;
+}
+
+.home-img {
+    background-image: url('/images/comp.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 .center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    color: white;
+}
+
+.see-more {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(100% - 50px);
+}
+
+.smooth-button {
+    background: none;
+    border: none;
+}
+
+/*
+  About
+*/
+.img-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*
+  Projects
+*/
+.project {
+    background: #474547;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project-headline {
+    padding-bottom: 30px;
 }
