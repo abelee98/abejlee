@@ -18,6 +18,11 @@ Imports
     text-transform: uppercase;
 }
 
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .home-img {
     background-image: url('/images/comp.jpg');
     background-size: cover;
@@ -74,3 +79,24 @@ Imports
 .project-headline {
     padding-bottom: 30px;
 }
+
+/*
+  Footer
+*/
+.social-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.link-list {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.pad-space {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
