@@ -17,6 +17,10 @@ Imports
 .upper {
     text-transform: uppercase;
 }
+.lower {
+    font-size: 1.3rem;
+    text-transform: lowercase;
+}
 
 .navbar{
     padding-top: 40px;
@@ -82,13 +86,17 @@ Imports
 .project-headline {
     padding-bottom: 30px;
 }
-
+.lang-type {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 .project-card {
-    width: 15rem;
+    width: 100%;
     display: block;
-    margin: auto;
+    margin: 20px auto;
     color: #474547;
     overflow: hidden;
+
 }
 .project-card img {
     height: 15rem;
