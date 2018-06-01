@@ -21,15 +21,15 @@ Imports
     font-size: 1.3rem;
     text-transform: lowercase;
 }
-
 .navbar{
     padding-top: 40px;
 }
 .nav-item {
     padding-left: 30px;
+    
 }
-.navbar > .navbar-nav > li > a:hover {
- color: red;
+.scroll_nav {
+    background: white;
 }
 .home-img {
     background-image: url('/images/comp.jpg');
