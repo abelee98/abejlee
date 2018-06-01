@@ -21,12 +21,22 @@ Imports
     font-size: 1.3rem;
     text-transform: lowercase;
 }
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+}
+
+/*
+  Navbar
+*/
 .navbar{
     padding-top: 40px;
 }
 .nav-item {
     padding-left: 30px;
-    
 }
 .scroll_nav {
     background: white;
@@ -38,20 +48,46 @@ Imports
     height: 100vh;
 }
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    color: white;
-}
+/*
+  Home Hero
+*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575.98px) {
+    #name {
+        font-size: 2.5rem;
+    }
+ }
 
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #name {
+        font-size: 3rem;
+    }
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #name {
+        font-size: 3.5rem;
+    }
+ }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #name {
+        font-size: 4rem;
+    }
+ }
+@media (min-width: 1200px) { 
+    #name {
+        font-size: 4.5rem;
+    }
+}
 .see-more {
     position: absolute;
     left: calc(50% - 25px);
     top: calc(100% - 50px);
 }
-
 .smooth-button {
     background: none;
     border: none;
@@ -64,6 +100,8 @@ Imports
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .about {
@@ -112,6 +150,7 @@ Imports
     list-style: none;
     text-align: center;
     padding: 0;
+    padding-top: 20px;
     margin: 0;
 }
 .link-list {

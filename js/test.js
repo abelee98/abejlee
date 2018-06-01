@@ -1,9 +1,10 @@
 $(document).ready(scroll_nav)
 $(window).scroll(scroll_nav)
-$(".see-more").click(function() {
+$(".see-more").click(function(e) {
   var offset = 50;
+  e.preventDefault();
   $('html,body').animate({
-      scrollTop: $(".about").offset().top - offset},'slow');
+      scrollTop: $(".about").offset().top - offset}, 1000);
 });
 var scrollLink = $('.scroll');
 
@@ -20,14 +21,19 @@ function scroll_nav() {
     
     if (scrollTop > 100) {
       $('#navbar').addClass('scroll_nav')
+      $('#navbar').addClass('navbar-light')
+      $('#navbar').removeClass('navbar-dark')
       $('.scroll').css({
         "color": "#474547"
       })
       $('.navbar').css({
-        "padding-top": "10px"
+        "padding-top": "10px",
+        "color": "#474547"
       })
     } else if (scrollTop < 100) {
       $('#navbar').removeClass('scroll_nav')
+      $('#navbar').removeClass('navbar-light')
+      $('#navbar').addClass('navbar-dark')
       $('.scroll').css({
         "color": "white",
         "padding-top": "0px",
