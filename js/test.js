@@ -1,15 +1,20 @@
 $(document).ready(scroll_nav)
 $(window).scroll(scroll_nav)
 $(".see-more").click(function() {
-  var offset = 60;
-  if($(window).width() < 992) {
-      offset = 54;
-  }
+  var offset = 50;
   $('html,body').animate({
       scrollTop: $(".about").offset().top - offset},'slow');
 });
+var scrollLink = $('.scroll');
+
+// Smooth scrolling
+scrollLink.click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top - 50
+    }, 1000);
+});
 function scroll_nav() {
-    var scrollLink = $('.scroll');
     var scrollTop = 0
     scrollTop = $(window).scrollTop();
     
@@ -32,12 +37,4 @@ function scroll_nav() {
         "padding-top": "40px"
       })
     }
-    // // Smooth scrolling
-    // scrollLink.click(function(e) {
-    //   e.preventDefault();
-    //   $('html, body').animate({
-    //     scrollTop: $(this.hash).offset().top
-    //   }, 1000);
-    // });
-    
 }
