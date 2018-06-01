@@ -1,3 +1,4 @@
+$(window).resize(scroll_nav);
 $(document).ready(scroll_nav)
 $(window).scroll(scroll_nav)
 $(".see-more").click(function(e) {
