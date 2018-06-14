@@ -34,12 +34,16 @@ Imports
 */
 .navbar{
     padding-top: 40px;
+    -webkit-transition: height .5s, line-height .5s;
+    transition: height .5s, line-height .5s;
+    height: 120px;
 }
 .nav-item {
     padding-left: 30px;
 }
 .scroll_nav {
     background: white;
+    height: 50px;
 }
 .home-img {
     background-image: url('/images/comp.jpg');
