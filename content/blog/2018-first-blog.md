@@ -1,7 +1,7 @@
 ---
 title: First Blog
 date: 2018-08-21T19:35:43.008Z
-draft: true
+draft: false
 categories: nothing
 tags:
   - something
