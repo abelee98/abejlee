@@ -5,6 +5,6 @@ draft: true
 categories: nothing
 tags:
   - something
-image: /images/me2.jpg
+image: /static/images/amzn.png
 ---
 adfkjslakjsdf
