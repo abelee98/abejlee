@@ -46,7 +46,7 @@ Imports
     height: 50px;
 }
 .home-img {
-    background-image: url('static/images/comp.jpg');
+    background-image: url('/static/images/comp.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
