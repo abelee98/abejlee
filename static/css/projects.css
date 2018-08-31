@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #2B2D42;
+}
+
+
+/*
+  Projects
+*/
+#project {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-headline {
+  padding-top: 30px;
+  color: #6A5AAD;
+}
+
+.project-card {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  color: #474547;
+  overflow: hidden;
+
+}
+.project-card img {
+  height: 15rem;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+}
