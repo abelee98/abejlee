@@ -57,7 +57,7 @@ p {
     padding-left: 15px;
 }
 .home-img {
-    background-image: url('/static/images/background.jpg');
+    background-image: url('/static/images/background.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
