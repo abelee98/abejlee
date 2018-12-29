@@ -22,8 +22,8 @@ function scroll_nav() {
     
     if (scrollTop > 100) {
       $('#navbar').addClass('scroll_nav')
-      $('#navbar').addClass('navbar-light')
-      $('#navbar').removeClass('navbar-dark')
+      $('#navbar').addClass('navbar-dark')
+      $('#navbar').removeClass('navbar-light')
       $('.scroll').css({
         "color": "#474547"
       })
@@ -33,8 +33,8 @@ function scroll_nav() {
       })
     } else if (scrollTop < 100) {
       $('#navbar').removeClass('scroll_nav')
-      $('#navbar').removeClass('navbar-light')
-      $('#navbar').addClass('navbar-dark')
+      $('#navbar').removeClass('navbar-dark')
+      $('#navbar').addClass('navbar-light')
       $('.scroll').css({
         "color": "white",
         "padding-top": "0px",

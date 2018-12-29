@@ -34,13 +34,12 @@ p {
 */
 .navbar{
     padding-top: 40px;
-    -webkit-transition: height .5s, line-height .5s;
-    transition: height .5s, line-height .5s;
-    height: 120px;
+    -webkit-transition: padding .5s, line-height .5s;
+    transition: padding .5s, line-height .5s;
 }
-.nav-item {
+/* .nav-item {
     padding-left: 30px;
-}
+} */
 .navbar a {
     color: #595959 !important;
     font-family: 'Hind', 'sans-serif';
@@ -52,10 +51,12 @@ p {
 }
 .scroll_nav {
     background: rgba(16,16,16,1);
-    height: 50px;
 }
 .scroll_nav a {
     color: #ffffff !important;
+}
+.nav-spacer {
+    padding-left: 15px;
 }
 .home-img {
     background-image: url('/static/images/background.jpg');
