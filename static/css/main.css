@@ -1,18 +1,17 @@
 /*
-============
-Imports
-============
-*/
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Cabin:100,300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,300,400,700,900');
-
-/*
   Colors: e7e0dc-575557-6d4935-3f302d-1f1f1f
 */
 
-.row-pad {
-    padding: 40px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
+
+.row-spacer{
+    height: 80px;
 }
 .upper {
     text-transform: uppercase;
@@ -20,6 +19,7 @@ Imports
 .lower {
     font-size: 1.3rem;
     text-transform: lowercase;
+    letter-spacing: 0px;
 }
 .center {
     position: absolute;
@@ -41,51 +41,40 @@ Imports
 .nav-item {
     padding-left: 30px;
 }
+.navbar a {
+    color: #595959 !important;
+    font-family: 'Hind', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.navbar a:hover {
+    color: #999999 !important;
+}
 .scroll_nav {
-    background: white;
+    background: rgba(16,16,16,1);
     height: 50px;
 }
+.scroll_nav a {
+    color: #ffffff !important;
+}
 .home-img {
-    background-image: url('/static/images/comp.jpg');
-    background-size: cover;
+    background-image: url('/static/images/background.jpg');
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
 /*
   Home Hero
 */
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 575.98px) {
-    #name {
-        font-size: 2.5rem;
-    }
- }
-
-/*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    #name {
-        font-size: 3rem;
-    }
- }
-
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #name {
-        font-size: 3.5rem;
-    }
- }
-
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    #name {
-        font-size: 4rem;
-    }
- }
-@media (min-width: 1200px) { 
-    #name {
-        font-size: 4.5rem;
-    }
+#name {
+    color: black;
+    letter-spacing: 10px;
+}
+#school {
+    color: rgb(68, 68, 68);
 }
 .see-more {
     position: absolute;
@@ -102,22 +91,36 @@ Imports
 */
 .img-circle {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.about {
+#about {
     padding-top: 50px;
     padding-bottom: 50px;
+    display: block;
+}
+#about h3 {
+    font-family: 'Hind', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+#about p {
+    font-size: 15px;
+    line-height: 1.8em;
+    color: rgb(68, 68, 68);
+}
+.about {
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 /*
   Projects
 */
 .project {
-    background: #474547;
+    background: rgba(16,16,16,1);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -126,11 +129,14 @@ Imports
 }
 
 .project-headline {
-    padding-bottom: 30px;
+    font-family: 'Hind', 'sans-serif';
+    letter-spacing: 10px;
 }
 .lang-type {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Hind', 'sans-serif';
+    letter-spacing: 10px;
 }
 .project-card {
     width: 100%;
@@ -138,10 +144,13 @@ Imports
     margin: 20px auto;
     color: #474547;
     overflow: hidden;
+}
+.project-card h3 {
+    font-family: 'Hind', 'sans-serif';
 
 }
 .project-card img {
-    height: 15rem;
+    height: 300px;
     object-fit: cover;
     object-position: top;
     overflow: hidden;
@@ -167,3 +176,35 @@ Imports
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+
+/* Mobile */
+@media (max-width: 425px) {
+    #name {
+        font-size: 1.5rem;
+    }
+    #school {
+        font-size: 0.8rem;
+    }
+ }
+
+/* Tablets */
+@media (min-width: 426px) and (max-width: 768px) { 
+    #name {
+        font-size: 1.8rem;
+    }
+ }
+
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #name {
+        font-size: 1.9rem;
+    }
+ }
+
+/* Extra Large Laptops */
+@media (min-width: 1025px) {
+    #name {
+        font-size: 2rem;
+    }
+ }

@@ -5,7 +5,7 @@ $(".see-more").click(function(e) {
   var offset = 50;
   e.preventDefault();
   $('html,body').animate({
-      scrollTop: $(".about").offset().top - offset}, 1000);
+      scrollTop: $("#about").offset().top - offset}, 1000);
 });
 var scrollLink = $('.scroll');
 
