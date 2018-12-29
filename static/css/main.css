@@ -37,9 +37,7 @@ p {
     -webkit-transition: padding .5s, line-height .5s;
     transition: padding .5s, line-height .5s;
 }
-/* .nav-item {
-    padding-left: 30px;
-} */
+
 .navbar a {
     color: #595959 !important;
     font-family: 'Hind', 'sans-serif';

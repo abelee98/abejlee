@@ -28,8 +28,9 @@ function scroll_nav() {
         "color": "#474547"
       })
       $('.navbar').css({
-        "padding-top": "10px",
-        "color": "#474547"
+        "padding-top": "20px",
+        "padding-bottom": "20px",
+        "color": "#ffffff"
       })
     } else if (scrollTop < 100) {
       $('#navbar').removeClass('scroll_nav')
