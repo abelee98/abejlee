@@ -47,6 +47,9 @@ p {
 .navbar a:hover {
     color: #999999 !important;
 }
+.scroll {
+    letter-spacing: 3px;
+}
 .scroll_nav {
     background: rgba(16,16,16,1);
 }
@@ -113,6 +116,32 @@ p {
 .about {
     margin-top: 25px;
     margin-bottom: 50px;
+}
+
+/*
+  Skills
+*/
+#Skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+}
+#Skills h3 {
+    font-family: 'Hind', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+#Skills p {
+    font-size: 15px;
+    line-height: 1.8em;
+    color: rgb(68, 68, 68);
+}
+#skills {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.skills {
+    background-color: rgba(16,16,16,1) !important;
 }
 
 /*
